@@ -7,8 +7,8 @@
     "keywords": "python classes",
     "license": "MIT",
     "project_urls": {
-        "Documentation": "https://github.com/ziord/cc/blob/master/README.md",
-        "Source Code": "https://github.com/ziord/cc"
+        "Documentation": "https://github.com/ziord/spy/blob/master/README.md",
+        "Source Code": "https://github.com/ziord/spy"
     },
     "package_data": {
         "license": "LICENSE.txt",
