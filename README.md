@@ -39,8 +39,16 @@ print(type(sc_obj))  # <class '__main__.SimpleClone'>
 print(sc_obj.foo, sc_obj.bar)  
 # <bound method SimpleClone.foo of SimpleClone(test)> <bound method SimpleClone.bar of SimpleClone(test)>
 ```
+
 ### Tests
+Tested for Python 3.7.
 See the [tests](https://github.com/ziord/spy/blob/master/tests) folder.
+
+
+### Installation
+Clone this repo, and do:
+`cd spy`
+`python setup.py install`
 
 
 ### Caution
