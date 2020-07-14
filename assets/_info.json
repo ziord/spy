@@ -1,0 +1,17 @@
+{
+    "name": "spy",
+    "version": "0.0.1",
+    "description": "Clone user-defined classes in Python",
+    "author": "Jeremiah Ikosin <@ziord>",
+    "long-desc": "Package for cloning user-defined classes in Python",
+    "keywords": "python classes",
+    "license": "MIT",
+    "project_urls": {
+        "Documentation": "https://github.com/ziord/cc/blob/master/README.md",
+        "Source Code": "https://github.com/ziord/cc"
+    },
+    "package_data": {
+        "license": "LICENSE.txt",
+        "readme": "README.md"
+    }
+}
