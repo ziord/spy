@@ -47,8 +47,7 @@ See the [tests](https://github.com/ziord/spy/blob/master/tests) folder.
 
 ### Installation
 Clone this repo, and do:
-`cd spy`
-`python setup.py install`
+`cd spy` <br/> `python setup.py install`
 
 
 ### Caution
