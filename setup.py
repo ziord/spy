@@ -4,7 +4,7 @@
 """
 
 from setuptools import setup, find_packages
-from assets import info
+import info
 
 data = info.get_info()
 setup(
