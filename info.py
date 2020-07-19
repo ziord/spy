@@ -6,9 +6,6 @@
 import json, os
 
 
-import json, os
-
-
 def get_info():
     fp_lst = os.path.dirname(os.path.abspath(__file__))
     tmp = os.path.sep.join(['assets', "_info.json"])
@@ -16,4 +13,3 @@ def get_info():
     with open(pkg_file_path) as file:
         json_data = json.load(file)
     return json_data
-
