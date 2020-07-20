@@ -1,6 +1,29 @@
-<div align="center">
-<img alt="spy image" src="assets/spy.png"/>
-</div>
+<p align="center">
+    <p align="center">
+        <img alt="spy image" src="assets/spy.png" >
+    </p>
+    <p align="center">
+        <a href="https://www.python.org/">
+            <img alt="built with python" src="https://img.shields.io/badge/built%20with-python-blue.svg?style=plastic" >
+        </a>
+        <a href="https://github.com/ziord/spy/blob/master/LICENSE.txt">
+            <img alt="Spy License" src="https://img.shields.io/github/license/ziord/spy?style=plastic" >
+        </a>
+        <a href="https://www.python.org/downloads/">
+            <img alt="python versions (3.6+)" src="https://img.shields.io/badge/python-3.6+-blue.svg?style=plastic">
+        </a>
+        <a href="https://github.com/ziord/spy/issues" >
+            <img alt="issues" src="https://img.shields.io/github/issues/ziord/spy?style=plastic">
+        </a>
+        <a href="https://github.com/ziord/spy/stargazers">
+            <img alt="stars" src="https://img.shields.io/github/stars/ziord/spy?style=plastic">
+        </a>
+        <a href="https://github.com/ziord/spy/network/members">
+            <img alt="forks" src="https://img.shields.io/github/forks/ziord/spy?style=plastic">
+        </a>
+    </p>
+</p>
+<br/>
 
 # spy
 
@@ -41,7 +64,7 @@ print(sc_obj.foo, sc_obj.bar)
 ```
 
 ### Tests
-Tested for Python 3.7.
+Tested for Python 3.7, compatible with Python 3.6+.
 See the [tests](https://github.com/ziord/spy/blob/master/tests) folder.
 
 
