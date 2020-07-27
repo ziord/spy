@@ -7,7 +7,7 @@ import unittest
 from tests.classes import *
 
 
-class TestCC(unittest.TestCase):
+class TestSpy(unittest.TestCase):
 
     def test_instance(self):
         clone1 = BaseClone()
@@ -93,8 +93,3 @@ class TestCC(unittest.TestCase):
         board_clone._t = (2, 3)
         self.assertFalse(board_clone._t is board._t, False)
         self.assertFalse(DerivedClone.bar is Derived.bar, False)
-
-    def test_builtin_class(self):
-        with self.assertRaises(Exception):
-            IntErrorClone()
-            ListErrorClone()

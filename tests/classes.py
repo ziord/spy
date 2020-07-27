@@ -3,7 +3,7 @@
 :license: MIT, see LICENSE for more details
 """
 
-from spy.cc import clone
+from spy.cc import clone, BuiltinTypeNotSupportedException
 
 
 #####################################
