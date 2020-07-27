@@ -48,7 +48,8 @@ def clone(o_klass):
     __builtins = dir(builtins)
     cause = "Cannot clone builtin type: {}"
     if hasattr(o_klass, '__name__') and o_klass.__name__ in __builtins:
-        raise BuiltinTypeNotSupportedException(cause.format(o_klass.__name__))
+        raise BuiltinTypeNotSupportedException(
+            cause.format(o_klass.__name__))
 
     def __clone(c_klass):
         attrs = {}

@@ -1,3 +1,8 @@
+"""
+:copyright: Copyright (c) 2020 Jeremiah Ikosin (@ziord)
+:license: MIT, see LICENSE for more details
+"""
+
 import unittest
 import doctest
 from tests import test_errors
