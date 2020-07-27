@@ -3,7 +3,7 @@
 :license: MIT, see LICENSE for more details
 """
 
-from spy.cc import clone, BuiltinTypeNotSupportedException
+from spy.cc import clone
 
 
 #####################################
@@ -130,12 +130,3 @@ class FunClone:
 class FunSubClone:
     ...
 
-
-@clone(int)
-class IntErrorClone:
-    pass
-
-
-@clone(list)
-class ListErrorClone:
-    pass

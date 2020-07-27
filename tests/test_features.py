@@ -93,3 +93,7 @@ class TestSpy(unittest.TestCase):
         board_clone._t = (2, 3)
         self.assertFalse(board_clone._t is board._t, False)
         self.assertFalse(DerivedClone.bar is Derived.bar, False)
+
+
+if __name__ == '__main__':
+    unittest.main()

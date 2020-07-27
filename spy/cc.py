@@ -4,6 +4,7 @@
 """
 
 import types
+import builtins
 from functools import update_wrapper
 
 __all__ = ('clone', 'BuiltinTypeNotSupportedException')
@@ -44,7 +45,7 @@ def _update_qname(func, old, new):
 
 
 def clone(o_klass):
-    __builtins = dir(__builtins__)
+    __builtins = dir(builtins)
     cause = "Cannot clone builtin type: {}"
     if hasattr(o_klass, '__name__') and o_klass.__name__ in __builtins:
         raise BuiltinTypeNotSupportedException(cause.format(o_klass.__name__))

@@ -75,7 +75,7 @@ Clone this repo, and do:
 
 
 ### Caution
-spy does not work for built-in types. See [tests](https://github.com/ziord/spy/blob/master/tests) for more information.
+spy does not work for built-in types. <br/> A `BuiltinTypeNotSupportedException` is raised if you try to clone builtin types.<br/>See [tests](https://github.com/ziord/spy/blob/master/tests) for more information.
 
 
 ### License
