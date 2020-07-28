@@ -16,7 +16,7 @@ interrclone = """
 True
 """
 
-listerrclone = """
+strerrclone = """
 >>> from spy.cc import clone, BuiltinTypeNotSupportedException
 >>> try:
 ...     @clone(str)
@@ -28,9 +28,35 @@ listerrclone = """
 True
 """
 
+listerrclone = """
+>>> from spy.cc import clone, BuiltinTypeNotSupportedException
+>>> try:
+...     @clone(list)
+...     class ListErrorClone:
+...         pass
+... except Exception as e:
+...     print(isinstance(e, BuiltinTypeNotSupportedException))
+...
+True
+"""
+
+tupleerrclone = """
+>>> from spy.cc import clone, BuiltinTypeNotSupportedException
+>>> try:
+...     @clone(tuple)
+...     class ListErrorClone:
+...         pass
+... except Exception as e:
+...     print(isinstance(e, BuiltinTypeNotSupportedException))
+...
+True
+"""
+
 __test__ = {
     'interrclone': interrclone,
-    'listerrclone': listerrclone
+    'strerrclone': strerrclone,
+    'listerrclone': listerrclone,
+    'tupleerrclone': tupleerrclone,
 }
 
 
