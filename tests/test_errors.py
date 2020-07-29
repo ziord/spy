@@ -10,10 +10,10 @@ interrclone = """
 ...     @clone(int)
 ...     class IntErrorClone:
 ...         pass
-... except Exception as e:
-...     print(isinstance(e, BuiltinTypeNotSupportedException))
+... except BuiltinTypeNotSupportedException as e:
+...     print(e)
 ...
-True
+Cannot clone builtin type: int
 """
 
 strerrclone = """
@@ -22,10 +22,10 @@ strerrclone = """
 ...     @clone(str)
 ...     class ListErrorClone:
 ...         pass
-... except Exception as e:
-...     print(isinstance(e, BuiltinTypeNotSupportedException))
+... except BuiltinTypeNotSupportedException as e:
+...     print(e)
 ...
-True
+Cannot clone builtin type: str
 """
 
 listerrclone = """
@@ -34,10 +34,10 @@ listerrclone = """
 ...     @clone(list)
 ...     class ListErrorClone:
 ...         pass
-... except Exception as e:
-...     print(isinstance(e, BuiltinTypeNotSupportedException))
+... except BuiltinTypeNotSupportedException as e:
+...     print(e)
 ...
-True
+Cannot clone builtin type: list
 """
 
 tupleerrclone = """
@@ -46,10 +46,10 @@ tupleerrclone = """
 ...     @clone(tuple)
 ...     class ListErrorClone:
 ...         pass
-... except Exception as e:
-...     print(isinstance(e, BuiltinTypeNotSupportedException))
+... except BuiltinTypeNotSupportedException as e:
+...     print(e)
 ...
-True
+Cannot clone builtin type: tuple
 """
 
 __test__ = {
